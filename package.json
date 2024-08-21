@@ -1,20 +1,33 @@
 {
-  "name": "vite-project",
-  "private": true,
-  "version": "0.0.0",
+  "name": "yt-web-base",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "prettier:check": "prettier --check --cache --ignore-unknown .",
+    "prettier:fix": "prettier --write --cache --ignore-unknown ."
   },
   "dependencies": {
-    "vue": "^3.4.37"
+    "vue": "^3.4.38",
+    "vue-router": "^4.4.3"
   },
   "devDependencies": {
+    "@bit-ocean/eslint-config": "^0.0.48",
+    "@bit-ocean/prettier-config": "^0.0.48",
+    "@bit-ocean/tsconfig": "^0.0.48",
+    "@types/node": "^22.4.2",
     "@vitejs/plugin-vue": "^5.1.2",
-    "typescript": "^5.5.3",
-    "vite": "^5.4.1",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.57.0",
+    "naive-ui": "^2.39.0",
+    "postcss": "^8.4.41",
+    "prettier": "^3.3.3",
+    "sass": "^1.77.8",
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.2",
     "vue-tsc": "^2.0.29"
-  }
+  },
+  "private": true
 }
